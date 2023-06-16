@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="javafxfxmlbraino.FXMLgame3Controller">
+      <children>
+      <ImageView fitHeight="658.0" fitWidth="1056.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/backg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="549.0" fitWidth="491.0" layoutX="5.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/lableWood5.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="80.0" layoutY="184.0" opacity="0.41" prefHeight="253.0" prefWidth="219.0" style="-fx-background-color: #D09356;" />
+      <Rectangle arcHeight="150.0" arcWidth="150.0" fill="WHITE" height="599.0" layoutX="420.0" layoutY="22.0" opacity="0.82" stroke="WHITE" strokeType="INSIDE" width="570.0" />
+      <VBox alignment="BASELINE_CENTER" layoutX="40.0" layoutY="179.0" prefHeight="200.0" prefWidth="291.0">
+         <children>
+            <Label text="choose the" textFill="#ffffe1">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="18.0" text="result of" textFill="#ffffe1">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="58.0" text="Arithmetic " textFill="#ffffe1">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="98.0" text="operation" textFill="#ffffe1">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="81.0" layoutY="138.0" text="to color the " textFill="#ffffe1">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="178.0" text="Shape" textAlignment="CENTER" textFill="#ffffe1">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="447.0" layoutY="40.0" prefHeight="580.0" prefWidth="513.0">
+         <children>
+            <AnchorPane layoutX="173.0" layoutY="240.0" prefHeight="317.0" prefWidth="340.0">
+               <children>
+                  <Rectangle fx:id="sqHouse" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="254.0" layoutX="26.0" layoutY="87.0" stroke="BLACK" strokeType="INSIDE" width="281.0" />
+                  <Rectangle fx:id="sqHouseDoor" arcHeight="5.0" arcWidth="5.0" disable="true" fill="WHITE" height="131.0" layoutX="120.0" layoutY="204.0" stroke="BLACK" strokeType="INSIDE" width="97.0" />
+                  <Polygon fx:id="tngHouseRoof" fill="WHITE" layoutX="171.0" layoutY="27.0" points="-170.0, 61.0, 156.22222900390625, 61.0, 3.33331298828125, -70.00001525878906" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle layoutX="132.0" layoutY="263.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+                  <ImageView fitHeight="34.0" fitWidth="180.0" layoutX="77.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/line.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="245.0" layoutX="67.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/line.png" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="67.0" layoutY="108.0" prefHeight="76.0" prefWidth="200.0" spacing="35.0">
+                     <children>
+                        <Circle fx:id="cirWinL" fill="WHITE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="cirWinR" fill="WHITE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="68.0" layoutY="109.0" prefHeight="76.0" prefWidth="200.0" spacing="35.0">
+                     <children>
+                        <ImageView fitHeight="92.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/wind.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="86.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/wind.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label fx:id="lbMsgSqHouseDoor" alignment="BASELINE_CENTER" layoutX="134.0" layoutY="212.0" opacity="0.0" prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #ffffff;" text="15-10 ?" textFill="#f43030">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbMsgSqHouse" alignment="BASELINE_CENTER" layoutX="226.0" layoutY="204.0" opacity="0.0" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #ffffff;" text="20+20 ?" textFill="#f43030">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbMsgCirWin" alignment="BASELINE_CENTER" layoutX="37.0" layoutY="153.0" opacity="0.0" prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #ffffff;" text="6+4 ?" textFill="#f43030">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbMsgTngHouseRoof" alignment="BASELINE_CENTER" layoutX="133.0" layoutY="-2.0" opacity="0.0" prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #ffffff;" text="100-1 ?" textFill="#f43030">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="110.0" layoutY="-38.0" prefHeight="218.0" prefWidth="374.0">
+               <children>
+                  <AnchorPane layoutX="21.0" layoutY="88.0" prefHeight="151.0" prefWidth="187.0">
+                     <children>
+                        <ImageView fitHeight="112.0" fitWidth="157.0" layoutX="38.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/cloudy.png" />
+                           </image>
+                        </ImageView>
+                        <Circle fx:id="cirCloud4" fill="WHITE" layoutX="159.0" layoutY="101.0" radius="30.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fx:id="cirCloud3" fill="WHITE" layoutX="108.0" layoutY="81.0" radius="34.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Rectangle fx:id="sqCloud2" arcHeight="90.0" arcWidth="50.0" fill="WHITE" height="49.0" layoutX="43.0" layoutY="82.0" stroke="TRANSPARENT" strokeType="INSIDE" width="138.0" />
+                        <AnchorPane layoutX="-128.0" layoutY="-55.0" prefHeight="151.0" prefWidth="187.0">
+                           <children>
+                              <ImageView fitHeight="80.0" fitWidth="130.0" layoutX="49.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/cloudy.png" />
+                                 </image>
+                              </ImageView>
+                              <Circle fx:id="cirCloud2" fill="WHITE" layoutX="146.0" layoutY="109.0" radius="24.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                              <Circle fx:id="cirCloud1" fill="WHITE" layoutX="105.0" layoutY="94.0" radius="28.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                              <Rectangle fx:id="sqCloud1" arcHeight="100.0" arcWidth="50.0" fill="WHITE" height="41.0" layoutX="54.0" layoutY="92.0" stroke="TRANSPARENT" strokeType="INSIDE" width="108.0" />
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="lbMsgCloud" alignment="BASELINE_CENTER" disable="true" layoutX="68.0" layoutY="88.0" opacity="0.0" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #ffffff;" text="(1+0)/1 ?" textFill="#f43030">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Circle fx:id="cirSun" fill="WHITE" layoutX="294.0" layoutY="124.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Line endX="146.0" endY="1.52587890625E-5" layoutX="107.0" layoutY="121.0" startX="116.11114501953125" />
+                  <Line endX="146.0" endY="1.52587890625E-5" layoutX="117.0" layoutY="96.0" startX="130.11114501953125" startY="-19.666671752929688" />
+                  <Line endX="166.77777099609375" endY="21.6666259765625" layoutX="195.0" layoutY="97.0" startX="138.3333740234375" startY="21.666641235351562" />
+                  <Line endX="146.0" endY="1.52587890625E-5" layoutX="174.0" layoutY="91.0" startX="160.77777099609375" startY="-21.888885498046875" />
+                  <Line endX="151.0" endY="46.888885498046875" layoutX="142.0" layoutY="36.0" startX="151.0" startY="21.0" />
+                  <Line endX="154.3333740234375" endY="-14.333358764648438" layoutX="113.0" layoutY="167.0" startX="134.88885498046875" startY="5.4444427490234375" />
+                  <Line endX="156.88885498046875" endY="44.44444274902344" layoutX="185.0" layoutY="129.0" startX="138.3333740234375" startY="21.666641235351562" />
+                  <Line endX="151.0" endY="46.888885498046875" layoutX="143.0" layoutY="142.0" startX="151.0" startY="21.0" />
+                  <Label fx:id="lbMsgSun" alignment="BASELINE_CENTER" layoutX="261.0" layoutY="108.0" opacity="0.0" prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #ffffff;" text="50*0 ?" textFill="#f43030">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-2.0" layoutY="206.0" prefHeight="341.0" prefWidth="200.0">
+               <children>
+                  <Rectangle fx:id="sqTree" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="173.0" layoutX="82.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
+                  <Polygon fx:id="tngTreeBottom" fill="WHITE" layoutX="105.0" layoutY="174.0" points="-81.00003051757812, 40.0, 69.99993896484375, 40.000030517578125, -6.33331298828125, -70.44442749023438" stroke="BLACK" strokeType="INSIDE" />
+                  <Polygon fx:id="tngTreeCenter" fill="WHITE" layoutX="104.0" layoutY="116.0" points="-70.22225952148438, 40.0, 59.55560302734375, 40.0, -6.00006103515625, -64.88888549804688" stroke="BLACK" strokeType="INSIDE" />
+                  <Polygon fx:id="tngTreeTop" fill="WHITE" layoutX="95.0" layoutY="56.0" points="-50.0, 40.0, 50.0, 40.0, 2.55560302734375, -47.77777099609375" stroke="BLACK" strokeType="INSIDE" />
+                  <Label fx:id="lbMsgTree" alignment="BASELINE_CENTER" layoutX="54.0" layoutY="175.0" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #ffffff;" text="(30-5)*1 ?" textFill="#f43030">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="401.0" layoutY="539.0" prefHeight="75.0" prefWidth="624.0">
+         <children>
+            <ImageView fitHeight="114.0" fitWidth="346.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/flower2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="114.0" fitWidth="346.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/flower2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-10.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/brid.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="115.0" layoutY="432.0" prefHeight="63.0" prefWidth="138.0" spacing="10.0">
+         <children>
+            <ChoiceBox fx:id="chkBox" opacity="0.87" prefWidth="130.0" style="-fx-background-color: #bfff80; -fx-background-radius: 10em;" />
+            <Label fx:id="lbMsgResult" alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="153.0" textFill="RED">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fitHeight="88.0" fitWidth="239.0" layoutX="111.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/tagi.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="scoreMsg" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="129.0" layoutY="39.0" prefHeight="48.0" prefWidth="180.0" textAlignment="CENTER">
+         <font>
+            <Font name="Jokerman" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btNext" alignment="BASELINE_CENTER" disable="true" layoutX="848.0" layoutY="575.0" mnemonicParsing="false" onAction="#ShangeScreenButtonNext" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView disable="true" fitHeight="56.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/nextt.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane layoutX="114.0" layoutY="461.0" opacity="0.41" prefHeight="48.0" prefWidth="148.0" style="-fx-background-color: #D09356;" />
+   </children>
+</AnchorPane>

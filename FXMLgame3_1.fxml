@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxfxmlbraino.FXMLgame3_1Controller">
+     <children>
+      <ImageView fitHeight="658.0" fitWidth="1056.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/backg.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbQes" layoutX="272.0" layoutY="55.0" text="HOW  MANY  SIDES?" textFill="#eb50ba">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="55.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbMsg" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="382.0" layoutY="510.0" opacity="0.84" prefHeight="59.0" prefWidth="356.0" style="-fx-background-color: #ffffff; -fx-background-radius: 25px;" textFill="#9ce7a8">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreMsg" layoutX="419.0" layoutY="119.0" prefHeight="41.0" prefWidth="218.0" textFill="#411bcc">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="445.0" fitWidth="1054.0" layoutX="-1.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/frame.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="414.0" layoutX="-9.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/flower.png" />
+         </image>
+      </ImageView>
+      <VBox fx:id="hboxPoly" alignment="BASELINE_CENTER" disable="true" layoutX="425.0" layoutY="207.0" prefHeight="228.0" prefWidth="241.0" spacing="5.0">
+         <children>
+            <Polygon fx:id="poly" fill="WHITE" points="-105.39996337890625, -60.13325500488281, 98.60003662109375, -60.13325500488281, -1.39996337890625, -197.4665985107422" stroke="BLACK" strokeType="INSIDE" />
+            <HBox prefHeight="68.0" prefWidth="237.0" spacing="20.0">
+               <children>
+                  <Button fx:id="c4" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="49.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/c4.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="c5" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="49.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/c5.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="c6" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="49.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/c6.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox fx:id="hboxCircle" alignment="BASELINE_CENTER" layoutX="165.0" layoutY="208.0" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+         <children>
+            <Circle fx:id="circle" fill="WHITE" radius="70.0" stroke="BLACK" strokeType="INSIDE" />
+            <HBox prefHeight="100.0" prefWidth="278.0" spacing="20.0">
+               <children>
+                  <Button fx:id="c1" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="49.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/c1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="c2" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="49.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/c2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="c3" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="49.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/c3.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox fx:id="hboxSquare" alignment="BOTTOM_CENTER" disable="true" layoutX="693.0" layoutY="210.0" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+         <children>
+            <Rectangle fx:id="square" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="140.0" stroke="BLACK" strokeType="INSIDE" width="149.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Rectangle>
+            <HBox alignment="BASELINE_CENTER" prefHeight="49.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button fx:id="c7" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="79.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/c7.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="c8" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="68.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/c8.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="c9" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/c9.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+     <Button fx:id="btNext" alignment="BASELINE_CENTER" disable="false" layoutX="877.0" layoutY="577.0" mnemonicParsing="false" onAction="#ShangeScreenButtonPushed" style="-fx-background-color: transparent;" />
+      <Button fx:id="btHome" layoutX="933.0" layoutY="14.0" mnemonicParsing="false" onAction="#ShangeScreenButtonPushed" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="83.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/homeicon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

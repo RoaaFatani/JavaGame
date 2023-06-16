@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="667.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxfxmlbraino.FXMLloadingpageController">
+   <children>
+      <ImageView fitHeight="753.0" fitWidth="1211.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/WhatsApp%20Image%202022-11-05%20at%208.40.14%20PM%20(1).jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="leter3" alignment="CENTER" layoutX="410.0" layoutY="-143.0" prefHeight="109.0" prefWidth="40.0" text="a" textFill="#b56225" visible="false">
+         <font>
+            <Font name="Bell MT Bold" size="500.0" />
+         </font>
+      </Label>
+      <Label fx:id="leter4" alignment="CENTER" layoutX="493.0" layoutY="-143.0" prefHeight="90.0" prefWidth="40.0" text="i" textFill="#b56225" visible="false">
+         <font>
+            <Font name="Bell MT Bold" size="500.0" />
+         </font>
+      </Label>
+      <Label fx:id="leter5" layoutX="468.0" layoutY="-143.0" prefHeight="310.0" prefWidth="113.0" text="n" textFill="#b56225" visible="false">
+         <font>
+            <Font name="Bell MT Bold" size="500.0" />
+         </font>
+      </Label>
+      <Label fx:id="leter6" layoutX="522.0" layoutY="-143.0" prefHeight="109.0" prefWidth="40.0" text="o" textFill="#b56225" visible="false">
+         <font>
+            <Font name="Bell MT Bold" size="500.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="myprogressbar" layoutX="414.0" layoutY="374.0" prefHeight="31.0" prefWidth="245.0" visible="false" />
+      <Button fx:id="startbtn" layoutX="442.0" layoutY="525.0" mnemonicParsing="false" onAction="#ShangeScreenButtonPushed" onMouseEntered="#startmousebtnenter" onMouseExited="#startmousebtnexit" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="92.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/startbutton.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="logo" fitHeight="195.0" fitWidth="246.0" layoutX="405.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logobraino2-2.png" />
+         </image>
+      </ImageView>
+      <ProgressBar layoutX="391.0" layoutY="478.0" prefHeight="31.0" prefWidth="278.0" />
+   </children>
+</AnchorPane>

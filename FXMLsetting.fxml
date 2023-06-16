@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="298.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxfxmlbraino.FXMLsettingController">
+   <children>
+      <ImageView fitHeight="566.0" fitWidth="493.0" layoutX="5.0" layoutY="3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/settingform.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="homesetting" layoutX="334.0" layoutY="386.0" mnemonicParsing="false" onAction="#ShangeScreenButtonPushed1" onMouseEntered="#homemousebtnenter" onMouseExited="#homemousebtnexit" prefHeight="58.0" prefWidth="63.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="87.0" fitWidth="87.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/homesetting.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="187.0" layoutY="154.0" prefHeight="61.0" prefWidth="107.0" text="Name :" textFill="WHITE">
+         <font>
+            <Font name="Segoe Print" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="232.0" prefHeight="61.0" prefWidth="107.0" text="Email :" textFill="WHITE">
+         <font>
+            <Font name="Segoe Print" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="emaillable1" layoutX="188.0" layoutY="308.0" prefHeight="61.0" prefWidth="95.0" text="Score :" textFill="WHITE">
+         <font>
+            <Font name="Segoe Print" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="76.0" fitWidth="83.0" layoutX="95.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/lablename.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soundsetting" fitHeight="88.0" fitWidth="88.0" layoutX="215.0" layoutY="392.0" onMouseClicked="#Soundclick" onMouseEntered="#soundmousebtnenter" onMouseExited="#soundmousebtnexit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/scoresetting%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="68.0" layoutX="99.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/email.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="68.0" layoutX="102.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/starscore.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="questhionsetting" fitHeight="114.0" fitWidth="88.0" layoutX="89.0" layoutY="390.0" onMouseClicked="#Quesclick" onMouseEntered="#quesmousebtnenter" onMouseExited="#quemousebtnexit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/srearchsetting.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="30.0" arcWidth="10.0" fill="WHITE" height="34.0" layoutX="293.0" layoutY="167.0" stroke="WHITE" strokeType="INSIDE" width="151.0" />
+      <Label fx:id="namelabel" layoutX="323.0" layoutY="155.0" prefHeight="61.0" prefWidth="95.0" text="None" textFill="#bcb8b8">
+         <font>
+            <Font name="Bell MT" size="21.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="30.0" arcWidth="10.0" fill="WHITE" height="34.0" layoutX="293.0" layoutY="248.0" stroke="WHITE" strokeType="INSIDE" width="151.0" />
+      <Label fx:id="emaillable" layoutX="303.0" layoutY="234.0" prefHeight="62.0" prefWidth="136.0" textFill="#bcb8b8">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="30.0" arcWidth="10.0" fill="WHITE" height="34.0" layoutX="293.0" layoutY="324.0" stroke="WHITE" strokeType="INSIDE" width="136.0" />
+      <Label fx:id="scorelable" layoutX="320.0" layoutY="310.0" prefHeight="61.0" prefWidth="95.0" text="None" textFill="#bcb8b8">
+         <font>
+            <Font name="Bell MT" size="27.0" />
+         </font>
+      </Label>
+      <HBox layoutX="176.0" layoutY="113.0" prefHeight="34.0" prefWidth="166.0">
+         <children>
+            <Hyperlink contentDisplay="CENTER" onAction="#CreatAccount" onDragEntered="#creatAccountenter" onDragExited="#creatAccountexit" textAlignment="CENTER">
+               <graphic>
+                  <Label fx:id="msg" alignment="CENTER" contentDisplay="CENTER" onDragEntered="#creatAccountenter" onDragExited="#creatAccountexit" textFill="#e80505" />
+               </graphic>
+            </Hyperlink>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
